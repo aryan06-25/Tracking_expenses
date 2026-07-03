@@ -20,7 +20,7 @@ with st.form("expense_form", clear_on_submit=True):
 if submit:
     if category and amount > 0:
         import pytz
-        IST= pytz.timezone('Asia/Kolkata's)
+        IST= pytz.timezone('Asia/Kolkata')
         now=datetime.now(IST)
         current_time = now.strftime("%d-%b-%Y %I:%M %p")
         month_year = now.strftime("%b-%Y")
